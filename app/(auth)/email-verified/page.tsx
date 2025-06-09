@@ -38,7 +38,6 @@ const EmailVerified = () => {
       </CardHeader>
       <CardContent className="space-y-4">
         <Alert className="bg-green-50 border border-green-200">
-          <CheckCircle className=" h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
           <AlertTitle className="text-green-600">
             Verification Complete
           </AlertTitle>
