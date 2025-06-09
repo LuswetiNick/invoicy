@@ -9,6 +9,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 import { ArrowRight, CheckCircle, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const EmailVerified = () => {
   return (
@@ -47,10 +48,12 @@ const EmailVerified = () => {
           </AlertDescription>
         </Alert>
         <div className="space-y-3">
-          <Button className="w-full">Proceed to Dashboard</Button>
+          <Button className="w-full" asChild>
+            <Link href="/dashboard">Proceed to Dashboard</Link>
+          </Button>
 
-          <Button variant="outline" className="w-full">
-            Go to Homepage
+          <Button variant="outline" className="w-full" asChild>
+            <Link href="/">Go to Homepage</Link>
           </Button>
         </div>
       </CardContent>
